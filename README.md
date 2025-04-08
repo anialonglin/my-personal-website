@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Website Purpose & Content
 
-## Getting Started
+Portfolio-focused website showcasing your work and skills
+Multiple pages with dedicated sections (landing page, blog, about me, projects, etc.)
+Integration of LLM functionality (specific implementation to be determined)
+Beautiful UI design with 3D elements
 
-First, run the development server:
+Style & Aesthetics
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Minimalist, futuristic, and cyberpunk aesthetic
+Color scheme based around blue tones but flexible for other colors
+Modern, clean typography (consider fonts like Inter, Space Grotesk, or JetBrains Mono for the tech/cyberpunk feel)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Layout & Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Multiple page structure with intuitive navigation menu
+Key sections:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Landing page with eye-catching 3D design elements
+About me page
+Projects showcase page
+Blog section
+Additional pages as needed ("More")
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3D Elements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Background animations using Three.js or React Three Fiber
+Interactive elements to enhance user engagement
+Potential for subtle 3D accents throughout the site
 
-## Deploy on Vercel
+UI Components & Interactivity
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Smooth animations and transitions between sections/pages
+Hover effects on interactive elements
+Potential for LLM chatbot integration and/or dynamic forms
