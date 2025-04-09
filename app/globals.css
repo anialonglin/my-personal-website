@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
+  --primary: #00b3ff;
+  --secondary: #1e1e2e;
+  --accent: #fe53bb;
+  --background: #0a0a14;
+  --text: #e0e0ff;
   --foreground: #171717;
 }
 
@@ -20,8 +28,8 @@
 }
 
 body {
-  background-color: #0a0a14;
-  color: #e0e0ff;
+  background-color: var(--background);
+  color: var(--text);
   font-family: 'Space Grotesk', sans-serif;
   overflow-x: hidden;
 }

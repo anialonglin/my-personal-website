@@ -1,5 +1,6 @@
-import React from 'react';
-import '../styles/homepage.css'; 
+import React from "react";
+import Link from "next/link";
+import "../styles/homepage.css";
 
 export default function Navbar() {
   return (
@@ -8,11 +9,17 @@ export default function Navbar() {
         CYBER<span className="logo-accent">FOLIO</span>
       </div>
       <ul className="nav-links">
-        {['Home', 'About', 'Projects', 'Blog', 'Contact'].map((item) => (
-          <li key={item}>
-            <a href={`#${item.toLowerCase()}`} className="nav-link">
-              {item}
-            </a>
+        {[
+          { name: "Home", href: "/" },
+          { name: "About", href: "/about" },
+          { name: "Projects", href: "/#projects" },
+          { name: "Blog", href: "/#blog" },
+          { name: "Contact", href: "/#contact" },
+        ].map((item) => (
+          <li key={item.name}>
+            <Link href={item.href} className="nav-link">
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>
