@@ -1,26 +1,24 @@
 const projects = [
   {
-    title: "Neural Interface Dashboard",
+    title: "TAB2XML",
     description:
-      "An immersive 3D dashboard that visualizes complex data streams through an intuitive neural interface. Features interactive 3D elements and real-time data processing.",
-    techStack: ["Next.js", "Three.js", "WebGL", "Node.js", "TensorFlow.js"],
-    image: "/api/placeholder/600/400",
-    tag: "Featured",
+      "A Music application that converts a given music tablature into music score.",
+    techStack: ["Java", "SeneBuilder"],
+    image: "/images/drumTabOutput1.png",
+    tag: "Music App",
     links: [
-      { label: "Live Demo", href: "#" },
-      { label: "Source Code", href: "#" },
+      { label: "GitHub", href: "https://github.com/anialonglin/TAB2XML-Music-application" },
     ],
   },
   {
-    title: "CyberChat LLM",
+    title: "Automated Watering System",
     description:
-      "A cyberpunk-themed chat application powered by AI language models with custom UI and animations.",
-    techStack: ["React", "Node.js", "OpenAI API", "Three.js"],
-    image: "/api/placeholder/400/250",
-    tag: "Web App",
+      "An automated plant watering system that waters plants based on soil moisture levels.",
+    techStack: ["Java", "Arduino"],
+    image: "/images/wateringSystem.png",
+    tag: "Hardware",
     links: [
-      { label: "Demo", href: "#" },
-      { label: "GitHub", href: "#" },
+      { label: "Source Code", href: "#" },
     ],
   },
   // Add other projects here...
