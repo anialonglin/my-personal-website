@@ -213,6 +213,23 @@
   justify-content: center;
 }
 
+.hero-social-links {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fe53bb; 
+}
+
 .btn {
   padding: 12px 30px;
   background: transparent;
