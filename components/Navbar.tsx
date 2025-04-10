@@ -12,9 +12,7 @@ export default function Navbar() {
         {[
           { name: "Home", href: "/" },
           { name: "About", href: "/about" },
-          { name: "Projects", href: "/#projects" },
-          { name: "Blog", href: "/#blog" },
-          { name: "Contact", href: "/#contact" },
+          { name: "Projects", href: "/projects" },
         ].map((item) => (
           <li key={item.name}>
             <Link href={item.href} className="nav-link">
