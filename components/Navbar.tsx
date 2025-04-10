@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import "../styles/homepage.css";
+import "../app/globals.css";
 
 export default function Navbar() {
   return (
@@ -11,10 +11,8 @@ export default function Navbar() {
       <ul className="nav-links">
         {[
           { name: "Home", href: "/" },
-          { name: "About", href: "/about" },
-          { name: "Projects", href: "/#projects" },
-          { name: "Blog", href: "/#blog" },
-          { name: "Contact", href: "/#contact" },
+          { name: "About Me", href: "/about" },
+          { name: "Projects", href: "/projects" },
         ].map((item) => (
           <li key={item.name}>
             <Link href={item.href} className="nav-link">

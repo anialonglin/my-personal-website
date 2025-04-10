@@ -1,7 +1,12 @@
 import React from 'react';
+import Link from 'next/link'; // Import Link from Next.js
 import '../styles/homepage.css'; 
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import icons
 
 export default function Hero() {
+  const email = "anialin327";
+  const domain = "gmail.com";
+
   return (
     <div className="hero">
       {/* Background Effects */}
@@ -25,11 +30,27 @@ export default function Hero() {
           Building futuristic digital experiences with cutting-edge technologies
         </p>
         <div className="hero-buttons">
-          <a href="#projects" className="btn btn-primary">
+          <Link href="/projects" className="btn btn-primary">
             View Projects
+          </Link>
+          <a href="https://www.linkedin.com/in/ania-lin" target="_blank" rel="noopener noreferrer" className="btn">
+            Connect with me
           </a>
-          <a href="#contact" className="btn">
-            Contact Me
+        </div>
+
+        {/* Social Links */}
+        <div className="hero-social-links">
+          <a href="https://www.linkedin.com/in/ania-lin" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/anialonglin" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaGithub />
+          </a>
+          <a
+            href={`mailto:${email}@${domain}`}
+            className="social-icon"
+          >
+            <FaEnvelope />
           </a>
         </div>
       </div>

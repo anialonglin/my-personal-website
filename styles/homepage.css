@@ -1,20 +1,3 @@
-/* Variables */
-:root {
-  --primary: #00b3ff;
-  --secondary: #1e1e2e;
-  --accent: #fe53bb;
-  --background: #0a0a14;
-  --text: #e0e0ff;
-}
-
-/* General Styles */
-body {
-  background-color: var(--background);
-  color: var(--text);
-  font-family: 'Space Grotesk', sans-serif;
-  overflow-x: hidden;
-}
-
 /* Navbar Styles */
 .navbar {
   display: flex;
@@ -50,7 +33,7 @@ body {
   color: var(--text);
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
   transition: color 0.3s ease;
   position: relative;
@@ -169,18 +152,6 @@ body {
   opacity: 0.6; /* Increased visibility */
 }
 
-@keyframes float {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate(30px, 50px) rotate(180deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg);
-  }
-}
-
 .hero-content {
   max-width: 800px;
   text-align: center;
@@ -240,6 +211,23 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: center;
+}
+
+.hero-social-links {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fe53bb; 
 }
 
 .btn {
