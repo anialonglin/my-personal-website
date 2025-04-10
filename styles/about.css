@@ -1,0 +1,249 @@
+/* General Styles */
+:root {
+  --primary: #00b3ff;
+  --secondary: #1e1e2e;
+  --accent: #fe53bb;
+  --background: #0a0a14;
+  --text: #e0e0ff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  padding: 120px 2rem 2rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  bottom: -10px;
+  left: 0;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Skill Tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 179, 255, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: var(--primary);
+  color: var(--background);
+  transform: translateY(-3px);
+}
+
+/* Experience Block */
+.experience-block {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 179, 255, 0.2);
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.experience-date {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experience-role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.experience-desc {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* Profile Photo */
+.about-photo {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-frame {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  border: 2px solid var(--primary);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 179, 255, 0.2), rgba(254, 83, 187, 0.2));
+  mix-blend-mode: overlay;
+}
+
+.profile-scan {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, var(--primary), transparent);
+  animation: profile-scan 3s infinite linear;
+  z-index: 3;
+}
+
+@keyframes profile-scan {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Background Accents */
+.bg-accents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.accent-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+.accent-1 {
+  width: 500px;
+  height: 500px;
+  background: var(--primary);
+  top: -100px;
+  left: -100px;
+}
+
+.accent-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--accent);
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Code Block */
+.code-block::before {
+    content: '// SKILLS ';
+    color: var(--primary);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.code-block {
+  background: rgba(30, 30, 46, 0.8);
+  border: 1px solid rgba(0, 179, 255, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  color: var(--text);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.code-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.accent-text {
+  color: var(--accent);
+  font-weight: bold;
+}
