@@ -2,7 +2,7 @@ const projects = [
   {
     title: "TAB2XML",
     description:
-      "A Music application that converts a given music tablature into music score.",
+      "A music application that converts a given music tablature into music score.",
     techStack: ["Java", "SeneBuilder"],
     image: "/images/drumTabOutput1.png",
     tag: "Music App",

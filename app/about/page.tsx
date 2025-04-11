@@ -103,7 +103,7 @@ export default function AboutPage() {
                 <div className="experience-role">Full Stack Software Engineer</div>
                 <div className="experience-company">Manulife Financial Corporation</div>
                 <div className="experience-desc">
-                Led the development of a Soft Registration page for the member portal with a strong focus on accessibility and WCAG compliance. Resolved critical application errors, authored cross-platform developer setup guides, and created an accessibility compliance manual to streamline validation processes.
+                Led the development of the Soft Registration page for the member portal with a strong focus on accessibility and WCAG compliance. Resolved critical application errors, authored cross-platform developer setup guides, and created an accessibility compliance manual to streamline validation processes.
                 </div>
               </div>
 

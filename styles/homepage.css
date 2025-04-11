@@ -1,63 +1,3 @@
-/* Navbar Styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  background: rgba(10, 10, 20, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 179, 255, 0.2);
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.logo-accent {
-  color: var(--accent);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: var(--primary);
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
 /* Hero Section Styles */
 .hero {
   display: flex;
@@ -67,6 +7,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding: 0 1rem; /* Add padding for smaller screens */
+  text-align: center; /* Center-align text for smaller screens */
 }
 
 .three-bg {
@@ -116,9 +58,9 @@
   height: 150px;
   background: linear-gradient(45deg, var(--primary), transparent);
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(50px); /* blur */
   animation: float 2s infinite linear;
-  opacity: 0.3;
+  opacity: 0.8; /* Increased visibility */
 }
 
 .shape1 {
@@ -128,8 +70,6 @@
   height: 180px;
   animation-delay: 0s;
   background: linear-gradient(45deg, var(--primary), var(--accent)); /* More vibrant gradient */
-  opacity: 0.5; /* Increased visibility */
-  filter: blur(50px); /* Reduced blur */
 }
 
 .shape2 {
@@ -139,8 +79,6 @@
   height: 200px;
   animation-delay: -5s;
   background: linear-gradient(45deg, var(--accent), transparent);
-  opacity: 0.6; /* Increased visibility */
-  filter: blur(60px); /* Reduced blur */
 }
 
 .shape3 {
@@ -149,13 +87,13 @@
   width: 100px;
   height: 100px;
   animation-delay: -10s;
-  opacity: 0.6; /* Increased visibility */
 }
 
 .hero-content {
   max-width: 800px;
   text-align: center;
   z-index: 2;
+  padding: 0 1rem; /* Add padding for better spacing */
 }
 
 .hero-title {
@@ -169,12 +107,12 @@
 }
 
 .hero-subtitle {
-  font-size: 2rem; /* Adjust size for h2 */
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   position: relative;
-  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .hero-subtitle.glitch-hover::before,
@@ -185,7 +123,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  color: #ff00ff; /* Adjust glitch color */
+  color: #ff00ff;
   z-index: -1;
   opacity: 0.8;
   transform: translate(2px, 2px);
@@ -193,7 +131,7 @@
 
 .hero-subtitle.glitch-hover:hover::before {
   transform: translate(-2px, -2px);
-  color: #00ffff; /* Adjust hover glitch color */
+  color: #00ffff;
 }
 
 .hero-subtitle.glitch-hover:hover::after {
@@ -209,6 +147,7 @@
 
 .hero-buttons {
   display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
   gap: 1rem;
   justify-content: center;
 }
@@ -218,6 +157,7 @@
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-icon {
@@ -227,7 +167,50 @@
 }
 
 .social-icon:hover {
-  color: #fe53bb; 
+  color: #fe53bb;
+}
+
+/* Responsive Adjustments for tablets */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem; 
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive Adjustments for mobile */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.8rem;
+  }
+
+  .social-icon {
+    font-size: 1rem;
+  }
 }
 
 .btn {
@@ -254,7 +237,6 @@
   width: 0;
   height: 100%;
   background: var(--primary);
-  transition: all 0.3s ease;
   z-index: -1;
 }
 

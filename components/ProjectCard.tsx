@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/projects.css";
 
 interface ProjectCardProps {
   title: string;
@@ -18,12 +19,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   links,
 }) => {
   return (
-    <div className="project-card bg-card-bg rounded-lg overflow-hidden border border-primary transition-transform transform hover:-translate-y-2 shadow-lg">
+    <div className="project-card">
       <div className="project-image relative">
         <img
           src={image}
           alt={`Image of ${title}`}
-          className="w-full h-48 object-cover transition-transform transform hover:scale-105"
+          className="w-full h-48 object-cover transition-transform transform"
         />
         {tag && (
           <div className="project-tag absolute top-4 right-4 bg-primary text-background px-3 py-1 rounded text-sm">

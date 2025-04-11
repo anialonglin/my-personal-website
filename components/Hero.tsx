@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'next/link'; // Import Link from Next.js
+import Link from 'next/link';
 import '../styles/homepage.css'; 
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import icons
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Hero() {
   const email = "anialin327";
