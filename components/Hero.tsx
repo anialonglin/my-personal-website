@@ -30,8 +30,8 @@ export default function Hero() {
           Building futuristic digital experiences with cutting-edge technologies
         </p>
         <div className="hero-buttons">
-          <Link href="/projects" className="btn btn-primary">
-            View Projects
+          <Link href="/about" className="btn btn-primary">
+            About Me
           </Link>
           <a href="https://www.linkedin.com/in/ania-lin" target="_blank" rel="noopener noreferrer" className="btn">
             Connect with me

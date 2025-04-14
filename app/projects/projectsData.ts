@@ -11,6 +11,28 @@ const projects = [
     ],
   },
   {
+    title: "Nutrifit: Fitness Tracking App",
+    description:
+      "An application that helps the user to keep a journal of their diet and exercise. ",
+    techStack: ["Java", "Java Swing"],
+    image: "/images/Nutrifit.png",
+    tag: "Fitness App",
+    links: [
+      { label: "GitHub", href: "https://github.com/anialonglin/Nutrifit_Eat_Run_Smile" },
+    ],
+  },
+  {
+    title: "Magic 8 Ball",
+    description:
+      "An application that can answer your questions and show you the way.",
+    techStack: ["React", "JavaScript"],
+    image: "/images/Magicball.png",
+    tag: "Magic App",
+    links: [
+      { label: "GitHub", href: "https://github.com/anialonglin/Magic8Ball-ReactApp" },
+    ],
+  },
+  {
     title: "Automated Watering System",
     description:
       "An automated plant watering system that waters plants based on soil moisture levels.",
