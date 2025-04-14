@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'next/link'; // Import Link from Next.js
+import Link from 'next/link';
 import '../styles/homepage.css'; 
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import icons
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Hero() {
   const email = "anialin327";
@@ -30,8 +30,8 @@ export default function Hero() {
           Building futuristic digital experiences with cutting-edge technologies
         </p>
         <div className="hero-buttons">
-          <Link href="/projects" className="btn btn-primary">
-            View Projects
+          <Link href="/about" className="btn btn-primary">
+            About Me
           </Link>
           <a href="https://www.linkedin.com/in/ania-lin" target="_blank" rel="noopener noreferrer" className="btn">
             Connect with me

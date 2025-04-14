@@ -67,11 +67,11 @@ body {
   color: var(--text);
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 700; /* Thicker text */
+  font-weight: 700;
   letter-spacing: 1px;
   transition: color 0.3s ease;
   position: relative;
-  margin-left: -10px; /* Slightly moved to the left */
+  margin-left: -10px;
 }
 
 .nav-link:hover {
@@ -91,6 +91,43 @@ body {
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(10, 10, 20, 0.9);
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 179, 255, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 /* Section Headings */
