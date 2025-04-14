@@ -18,14 +18,6 @@ export default function AboutPage() {
             <p>
               Hey, I'm Ania — a software engineer with a curious mind and a love for building things that make life better, even in small ways. My journey into tech started with a fascination for how things work and grew into a passion for designing thoughtful, accessible, and impactful digital experiences.
             </p>
-            <p>
-              I believe great software isn't just about clean code — it's about empathy, collaboration, and creativity. Whether it's working on a team to launch a product or hacking together a prototype overnight, I enjoy the process of solving problems and learning something new along the way.
-            </p>
-            <p>
-              Right now, I’m focused on growing as a developer, exploring the intersection of technology and human experience, and contributing to projects that matter. I'm especially drawn to work that challenges me to think critically, build responsibly, and keep learning.
-            </p>
-            <p>Outside of the screen, I’m probably sketching out ideas, playing with design, or thinking about how to make tech feel a little more human.</p>
-
             <div className="code-block">
               <div className="code-text">
                 <span className="highlight">const</span> skills = &#123;
