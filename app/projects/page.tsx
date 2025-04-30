@@ -21,7 +21,7 @@ export default function ProjectsPage() {
           <div className="projects-container max-w-6xl mx-auto">
             <h2 className="section-heading text-4xl font-bold mb-4">Projects</h2>
             <p className="section-subheading text-lg opacity-70 mb-8">
-              A glimpse into my creative journey, where each project is a step forward in learning, building, and exploring new ideas.
+              Showing some of my projects here.
             </p>
 
             <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

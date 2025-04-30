@@ -139,11 +139,6 @@
   color: #ff00ff;
 }
 
-.hero-description {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.8;
-}
 
 .hero-buttons {
   display: flex;
@@ -180,9 +175,6 @@
     font-size: 1.2rem;
   }
 
-  .hero-description {
-    font-size: 0.9rem;
-  }
 
   .hero-buttons {
     flex-direction: column;
@@ -202,10 +194,6 @@
 
   .hero-subtitle {
     font-size: 1rem;
-  }
-
-  .hero-description {
-    font-size: 0.8rem;
   }
 
   .social-icon {
