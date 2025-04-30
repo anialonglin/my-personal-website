@@ -26,9 +26,6 @@ export default function Hero() {
         <h2 className="hero-subtitle glitch-hover" data-text="FULL STACK DEVELOPER">
           FULL STACK DEVELOPER
         </h2>
-        <p className="hero-description">
-          Building futuristic digital experiences with cutting-edge technologies
-        </p>
         <div className="hero-buttons">
           <Link href="/about" className="btn btn-primary">
             About Me
