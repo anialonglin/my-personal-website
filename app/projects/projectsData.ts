@@ -3,7 +3,7 @@ const projects = [
     title: "WhatCatAreYou",
     description:
       "A mobile app that reveals your inner feline identity by showing a random cat image and pairing it with a playful personality trait.",
-    techStack: ["React Native", "TypeScript"],
+    techStack: ["React Native", "TypeScript", "API"],
     image: "/images/catApp.png",
     tag: "Cat App",
     links: [
